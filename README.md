@@ -1,7 +1,7 @@
 
-# TinyML with Edge Impulse and ESP32 - LM35 Temperature Sensor
+# TinyML with Edge Impulse and ESP32 IoT Development Trainer Kit by RDL Technologies Pvt.Ltd
 
-This guide walks you through building a TinyML project using Edge Impulse and an ESP32 board with an LM35 temperature sensor. It covers setting up the software environment, writing the Arduino code, connecting the ESP32 to Edge Impulse, and training a simple ML model.
+This guide walks you through building a TinyML project using Edge Impulse and an ESP32 IoT Development Trainer Kit by RDL Technologies Pvt.Ltd with an LM35 temperature sensor. It covers setting up the software environment, writing the Arduino code, connecting the ESP32 to Edge Impulse, and training a simple ML model.
 
 ---
 
@@ -25,7 +25,7 @@ Before getting started, make sure you have the following installed and ready:
 
 ## 2. Hardware Required
 
-- ESP32 Development Board
+- ESP32 Development Board (ESP32 IoT Development Trainer Kit by RDL)
 - LM35 Analog Temperature Sensor
 - Jumper wires
 - Breadboard
@@ -69,11 +69,11 @@ void loop() {
 
 1. Go to [Edge Impulse Studio](https://studio.edgeimpulse.com).
 2. Log in or sign up.
-3. ![1](https://github.com/user-attachments/assets/1d755236-42a3-4617-bb03-68247bcadd2c)
+![1](https://github.com/user-attachments/assets/1d755236-42a3-4617-bb03-68247bcadd2c)
 
-4. Click on **"Create new project"**.
-5. Name your project (e.g., `LM35 Temp Detection`).
-6. Click **"Create project"** to continue.
+3. Click on **"Create new project"**.
+4. Name your project (e.g., `LM35 Temp Detection`).
+5. Click **"Create project"** to continue.
 ![2](https://github.com/user-attachments/assets/ea57ad5e-2836-4d14-8700-c4fa1820c297)
 
 ---
