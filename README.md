@@ -169,6 +169,8 @@ Your device is now linked to Edge Impulse! A link will be displayed to open the 
 2. Start sampling from the connected ESP32.
 3. Label your data samples.
 4. Collect at least 3 minutes of data for each label.
+5. Go to Dashboard Section and perform test/train split.
+   
 ![5](https://github.com/user-attachments/assets/984eeb35-9f0e-4046-b8e6-9c4f4e4e8ba5)
 
 ---
@@ -350,6 +352,11 @@ void loop() {
 
 Upload the example code and monitor results on Serial Monitor.
 ---
+## Results 
+
+![WhatsApp Image 2025-08-01 at 11 52 08 AM](https://github.com/user-attachments/assets/308e5942-10b6-46e0-a514-82db06fc55e5)
+
+![15](https://github.com/user-attachments/assets/623d6473-1319-4c25-a927-11e029ab3013)
 
 ## Notes
 
