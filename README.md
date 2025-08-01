@@ -59,7 +59,7 @@ void loop() {
 
 ### Explanation:
 
-- **analogRead(A0)**: Reads the voltage from LM35 (which outputs 10mV per °C).
+- **analogRead**: Reads the voltage from LM35 (which outputs 10mV per °C).
 - **Serial.println()**: Sends the reading to the serial monitor so Edge Impulse can read it.
 - **delay(100)**: Controls the sampling frequency to 10Hz.
 
@@ -101,9 +101,11 @@ To install the CLI tools globally, run:
 ```bash
 npm install -g edge-impulse-cli
 ```
+This allows you to use commands like `edge-impulse-data-forwarder`.
+
 ![3](https://github.com/user-attachments/assets/c96669d6-4c6d-4ee3-a97f-b1e718253375)
 
-This allows you to use commands like `edge-impulse-data-forwarder`.
+Here select Devices and you will see different sources to collect data (like phone, Computer or development board) and select connect to development boards.
 
 ---
 
@@ -179,9 +181,12 @@ Your device is now linked to Edge Impulse! A link will be displayed to open the 
 3. Add a **Flatten** block.![8![9](https://github.com/user-attachments/assets/a8f5c041-2fb0-4607-8642-7d5cfde0c066)
 ](https://github.com/user-attachments/assets/a9a1c68d-da10-415e-bd2e-defdd37607f0)
 
-4. Add a **Classification** block.![10](https://github.com/user-attachments/assets/e113a2e1-ea16-4c5b-b920-e9fc0be2591f)
+Here save the parameter and generate features.
 
-5. Go to **Training**, click **Start Training**.
+4. Add a **Classification** block.![10](https://github.com/user-attachments/assets/e113a2e1-ea16-4c5b-b920-e9fc0be2591f)         
+   Save and train the model.
+   
+6. Go to **Re-Training**, click **Start Training**.
 ![11](https://github.com/user-attachments/assets/9e685542-1278-4e72-8144-7bbcfd1d80a1)
 
 ---
@@ -189,7 +194,7 @@ Your device is now linked to Edge Impulse! A link will be displayed to open the 
 ## 9. Live Classification
 
 1. Go to **Live Classification**.
-2. Stream data again from your ESP32.
+2. Click on start sampling to stream data again from your ESP32.
 3. See how well the model predicts live data.
 ![12](https://github.com/user-attachments/assets/23e0cd45-ad09-4247-bc72-df7cd7b1e80c)
 
