@@ -38,20 +38,22 @@ Before getting started, make sure you have the following installed and ready:
 Upload the following code using Arduino IDE:
 
 ```cpp
-// Simple Arduino sketch to read LM35 analog data and send it to serial
-
-int sensorPin = A0; // Analog pin for LM35
-int sensorValue = 0;
+#define SENSOR_PIN 34
 
 void setup() {
-  Serial.begin(115200); // Start serial communication
+  Serial.begin(115200);
 }
 
 void loop() {
-  sensorValue = analogRead(sensorPin); // Read analog value
-  Serial.println(sensorValue); // Print to serial
-  delay(100); // Send data at 10 Hz
+  int rawValue = analogRead(SENSOR_PIN);
+  float voltage = rawValue * (3.3 / 4095.0);
+  float temperature = voltage * 100.0; // LM35 => 10mV/°C
+
+  Serial.println(temperature);
+  delay(100);  // 10Hz
 }
+
+
 ```
 ![0](https://github.com/user-attachments/assets/1e6ed020-50d3-4cca-9dfa-21390381f812)
 
