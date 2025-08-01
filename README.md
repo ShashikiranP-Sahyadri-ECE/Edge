@@ -356,10 +356,12 @@ Upload the example code and monitor results on Serial Monitor.
 
 ## Resources
 
+- [RDL Technologies Pvt.Ltd](https://researchdesignlab.com/development-baord/esp32/esp32-development-board-trainer-kit.html)
 - [Edge Impulse Docs](https://docs.edgeimpulse.com/)
 - [LM35 Datasheet](https://www.ti.com/lit/ds/symlink/lm35.pdf)
 - [ESP32 Arduino Core](https://github.com/espressif/arduino-esp32)
-
+- [Python Download](https://www.python.org/downloads/)
+- [Node.js](https://nodejs.org/en/download)
 ---
 
 ## License
